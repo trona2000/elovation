@@ -69,12 +69,13 @@
 
   <div class="span4">
     <h2>Recent Results</h2>
+	     <div class='description'>
        <% if @game.recent_results.any? %>
       <%= render partial: 'shared/results', object: @game.recent_results, locals: {show_game: false} %>
     <% else %>
       <span>No results, play some games!</span>
     <% end %>
-
+	  </div>
   </div>
 
 </div>
